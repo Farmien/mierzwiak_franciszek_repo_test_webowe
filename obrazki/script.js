@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
     //funkcyjka klikancyjna na lewy przcisk do showania all i wyswietlenie poprzedniego obrazka index arraj dekrementacja tego typu benc
     $('#butlewy').click(function(){
-        $.each(mains, function(nazwa){
+        $.each(mains, function(index, nazwa){
             $(nazwa).hide();
         });
         if(shownImage == 0){
@@ -36,4 +36,15 @@ $(document).ready(function(){
         
         $(mains[shownImage]).show();
     });
+
+    //funkcje pod niechowanie wszystkiego tylko pokazanego obrazka
+    /*
+    $.each(minis, function(index2, nazwa2){
+        $(nazwa2).click(function(){
+            $(mains[shownImage]).hide();;
+            $(mains[index2]).show();
+            shownImage = index2;
+        });
+    });
+    */
 });
