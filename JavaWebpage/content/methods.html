@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contentStyle.css">
+    </head>
+    <body>
+        <div id="code3">
+            <span class="rd">public class</span> Card {<br>
+                &nbsp&nbsp&nbsp    <span class="rd">private</span> int number;<br>
+                &nbsp&nbsp&nbsp    <span class="rd">private</span> String name;<br>
+                <br>
+                &nbsp&nbsp&nbsp    <span class="rd">public</span> Card(int number, String name){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        this.number = <span class="prpl">multiplyByTen</span>(number);<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        this.name = name;<br>
+                    &nbsp&nbsp&nbsp    }<br>
+                
+                &nbsp&nbsp&nbsp    <span class="gry">//Publiczne Metody</span><br>
+                &nbsp&nbsp&nbsp    <span class="rd">public</span> int <span class="prpl">getNumber</span>(){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        return number;<br>
+                    &nbsp&nbsp&nbsp    }<br>
+                    &nbsp&nbsp&nbsp    <span class="rd">public</span> String <span class="prpl">getName</span>(){<br>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        return name;<br>
+                        &nbsp&nbsp&nbsp    }<br>
+                
+                &nbsp&nbsp&nbsp    <span class="rd">public</span> void <span class="prpl">setNumber</span>(int number){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        this.number = number;<br>
+                    &nbsp&nbsp&nbsp   }<br>
+                
+                &nbsp&nbsp&nbsp    <span class="rd">public</span> void <span class="prpl">setName</span>(String name){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        this.name = name;<br>
+                    &nbsp&nbsp&nbsp   }<br>
+                    &nbsp&nbsp&nbsp <span class="gry">//Prywatne Metody</span><br>
+                    &nbsp&nbsp&nbsp    <span class="rd">private</span> int <span class="prpl">multiplyByTen</span>(int number){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp        return number * <span class="int">10</span>;<br>
+                    &nbsp&nbsp&nbsp   }<br>
+            }<br>
+        
+            <span class="rd">public class</span> CardReader {<br>
+                &nbsp&nbsp&nbsp    Card card = new Card(<span class="int">11</span>,<span class="string">"walet"</span>)<br>
+                &nbsp&nbsp&nbsp System.out.<span class="prpl">println</span>(card.<span class="prpl">getName</span>());<br>
+            }
+        </div>
+            Publiczne Metody:<br>
+            Publicznych metod używamy, kiedy chcemy użyć methody poza klasą.(Wczytanie nazwy karty poza klasą karty)<br><br>
+            Prywatne Metody:<br>
+            Prywatnyh metod używamy, kiedy chcemy użyć metody tylko wewnątrz klasy.(Mnożenie liczby przez 10)
+    </body>
+</html>

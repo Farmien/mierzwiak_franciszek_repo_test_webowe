@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contentStyle.css">
+    </head>
+    <body>
+        
+        <div id="code"><span class="rd">public class</span> Card {<br>
+            &nbsp&nbsp&nbsp <span class="rd">private</span> int number;<br>
+            &nbsp&nbsp&nbsp <span class="rd">private</span> String name;<br>
+            <br>
+            <br>&nbsp&nbsp&nbsp<span class="gry">//Konstruktor 1</span><br>
+            &nbsp&nbsp&nbsp <span class="rd">public</span> Card(int number, String name){<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp this.number = number;<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp this.name = name;<br>
+            &nbsp&nbsp&nbsp }
+            <br>
+            <br>&nbsp&nbsp&nbsp<span class="gry">//Konstruktor 2</span><br>
+            &nbsp&nbsp&nbsp <span class="rd">public</span> Card(){<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp number = <span class="int">12</span>;<br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp name = <span class="string">"queen"</span>;<br>
+            &nbsp&nbsp&nbsp}<br>
+            
+            
+        }</div>
+        Konstruktor 1:<br>Tworzy obiekt posiadający 2 dane możliwe do wprowadzenia.<br><br><br><br>Konstruktor 2:<br>Tworzy obiekt nieposiadający możliwych danych do wprowadzenia.(Dane są ustawiane automatycznie w momencie tworzenia obiektu).
+        <div id="code2">
+            <span class="gry">//Konstruktor 1</span><br>
+            Card karta = <span class="rd">new</span> Card(<span class="int">2</span>, <span class="string">"two"</span>)<br>
+            <span class="gry">//Konstruktor 2</span><br>
+            Card karta2 = <span class="rd">new</span> Card()
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="contentStyle.css">
+    </head>
+    <body>
+        
+        <div id="code">
+            <span class="rd">class</span> DaneOsobowe {<br>
+                <br>&nbsp&nbsp&nbsp<span class="gry">//Utworzenie zmiennych</span><br>
+                &nbsp&nbsp&nbsp<span class="rd"> public</span> String imie = ;<br>
+                &nbsp&nbsp&nbsp<span class="rd"> private</span> String nazwisko;<br>
+                &nbsp&nbsp&nbsp<span class="rd"> protected</span> String klasa;<br>
+                &nbsp&nbsp&nbsp<span class="rd"> public</span> DaneOsobowe(String imie){<br>
+                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   this.imie = imie;<br>
+                    &nbsp&nbsp&nbsp}<br>
+                
+            }
+                <br><br>
+            <span class="rd">class</span> WypisanieImienia {<br>
+                &nbsp&nbsp&nbsp DaneOsobowe ds = <span class="rd">new</span> DaneOsobowe(<span class="string">"wojciech"</span>)<br>
+                &nbsp&nbsp&nbsp<span class="gry">//Wypisanie imienia</span><br>
+                &nbsp&nbsp&nbsp System.out.<span class="prpl">println</span>(ds.imie);<br>
+            }<br><br>
+            <span class="rd">class</span> WypisanieKlasy extends DaneOsobowe{<br>
+                &nbsp&nbsp&nbsp<span class="gry">//Wypisanie Klasy</span><br>
+                &nbsp&nbsp&nbsp System.out.<span class="prpl">println</span>(klasa);<br>
+            }
+        </div>
+        Utworzenie zmiennych:<br>
+        Dzięki modyfikatorom dostępu takimi jak <b>public</b>,<b> private </b>i<b> protected</b> możemy manipulować widocznością zmiennych.<br><br>
+        Dzięki <b>public</b> możemy użyć zmiennych poza klasą (Wypisanie Imienia), z kolei dzięki <b>protected</b> możemy użyć podczas dziedziczenia klasy(Wypisanie Klasy)
+        <br><br>
+        Aby posiadać zahermetyzowane zmienne musimy użyć <b>private</b> który zabrania użycia zmiennej poza klasą.
+        
+    </body>
+</html>
