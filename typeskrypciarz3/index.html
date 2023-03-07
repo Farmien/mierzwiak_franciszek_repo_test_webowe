@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <script src="skrypt.js"></script>
+    <button onclick='Pole("kolo")'>Koło</button>
+    <button onclick='Pole("kwadrat")'>Kwadrat</button>
+    <button onclick='Pole("prostokat")'>Prostokąt</button>
+    <button onclick='Pole("trojkat")'>Trojkąt</button>
+
+    <form id="jajo">
+        <div id="polekola" class="div">
+            Podaj promień: <input type="number" id="KoR" onkeyup='InputCheck("KoR")'><br>
+            <button onclick="PoleKola()">Oblicz</button>
+        </div>
+        <div id="polekwadratu" class="div">
+            Podaj bok: <input type="number" id="KwB"onkeyup='InputCheck("KwB")'><br>
+            <button onclick="PoleKwadratu()">Oblicz</button>
+        </div>
+        <div id="poleprostokata" class="div">
+            Podaj bok a:<input type="number" id="PBA" onkeyup='InputCheck("PBA")'><br>
+            Podaj bok b:<input type="number" id="PBB" onkeyup='InputCheck("PBB")'><br>
+            <button onclick="PoleProstokata()">Oblicz</button>
+        </div>
+        <div id="poletrojkata" class="div">
+            Podaj bok a:<input type="number" id="TBA" onkeyup='InputCheck("TBA")'><br>
+            Podaj bok b:<input type="number" id="TBB" onkeyup='InputCheck("TBB")'><br>
+            Podaj bok c:<input type="number" id="TBC" onkeyup='InputCheck("TBC")'><br>
+            <button onclick="PoleTrojkata()">Oblicz</button>
+        </div>
+    </form>
+</body>
+</html>
